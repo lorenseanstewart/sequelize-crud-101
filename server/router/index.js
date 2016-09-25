@@ -1,7 +1,7 @@
 'use strict'
 
 const routes = [
-  require('./routes/routes')
+  require('./routes/owners')
 ];
 
 
