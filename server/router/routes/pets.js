@@ -40,7 +40,6 @@ module.exports = (app, db) => {
   app.patch('/pet/:id', (req, res) => {
     const id = req.params.id;
     const updates = req.body.updates;
-    console.log('hihi', req.body)
     db.pets.find({
       where: { id: id }
     })

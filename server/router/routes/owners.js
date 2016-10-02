@@ -1,6 +1,8 @@
 'use strict';
 
 module.exports = (app, db) => {
+
+  // GET all owners
   app.get('/owners', (req, res) => {
     db.owners.findAll({})
       .then(owners => {
