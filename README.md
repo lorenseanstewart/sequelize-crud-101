@@ -1,5 +1,10 @@
-###Tutorial: Sequelize CRUD 101
+###Tutorial: Sequelize CRUD 102
 
-This repo is the companion to [this here blog post](http://lorenstewart.me/2016/10/03/sequelize-crud-101/).
+This repo is the companion to []().
 
-Make sure you're using Node 6, then `npm run dev`.
+This first installment of this blog series can be found [here](http://lorenstewart.me/2016/10/03/sequelize-crud-101/).
+
+To get started:
+ 1. make sure you're using Node 6
+ 2. `npm install`
+ 3. `npm run dev`.
