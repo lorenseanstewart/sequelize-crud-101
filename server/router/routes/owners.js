@@ -4,7 +4,7 @@ module.exports = (app, db) => {
 
   // GET all owners
   app.get('/owners', (req, res) => {
-    db.owners.findAll({})
+    db.owners.findAll()
       .then(owners => {
         res.json(owners);
       });

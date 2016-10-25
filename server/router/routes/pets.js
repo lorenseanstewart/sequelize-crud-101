@@ -3,7 +3,7 @@
 module.exports = (app, db) => {
   // GET all pets
   app.get('/pets', (req, res) => {
-    db.pets.findAll({})
+    db.pets.findAll()
       .then(pets => {
         res.json(pets);
       });
