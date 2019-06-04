@@ -22,7 +22,6 @@ module.exports = (app, db) => {
 
   // POST single pet
   app.post('/pets', (req, res) => {
-    console.log('hihi', req.body)
     const name = req.body.name;
     const owner_id = req.body.owner_id;
     const type = req.body.type;
