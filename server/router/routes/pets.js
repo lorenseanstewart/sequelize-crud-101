@@ -10,7 +10,7 @@ module.exports = (app, db) => {
   });
 
   // GET one pet by id
-  app.get('/pet/:id', (req, res) => {
+  app.get('/pets/:id', (req, res) => {
     const id = req.params.id;
     db.pets.find({
       where: { id: id}
@@ -21,7 +21,7 @@ module.exports = (app, db) => {
   });
 
   // POST single pet
-  app.post('/pet', (req, res) => {
+  app.post('/pets', (req, res) => {
     console.log('hihi', req.body)
     const name = req.body.name;
     const owner_id = req.body.owner_id;
@@ -37,9 +37,9 @@ module.exports = (app, db) => {
   });
 
   // PATCH single pet
-  app.patch('/pet/:id', (req, res) => {
+  app.put('/pets/:id', (req, res) => {
     const id = req.params.id;
-    const updates = req.body.updates;
+    const updates = req.body;
     db.pets.find({
       where: { id: id }
     })
@@ -51,7 +51,7 @@ module.exports = (app, db) => {
       });
   });
 
-  app.delete('/pet/:id', (req, res) => {
+  app.delete('/pets/:id', (req, res) => {
     const id = req.params.id;
     db.pets.destroy({
       where: { id: id }
